@@ -9,15 +9,14 @@ const Countries: React.FC = () => {
   const [countries, setCountries] = useState<countriesInterface[]>([])
 
   const getDataFromApi = async () => {
-    const response = await api.get<countriesInterface[]>('/countries')
+    const response = await api.get('/countries')
     setCountries(response.data)
     // console.log(countries)
   }
 
   useEffect(() => {
     getDataFromApi()
-    console.log(countries.length)
-  }, [countries])
+  }, [])
 
   return (
     <>
