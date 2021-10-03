@@ -11,7 +11,6 @@ const Countries: React.FC = () => {
   const getDataFromApi = async () => {
     const response = await api.get('/countries')
     setCountries(response.data)
-    // console.log(countries)
   }
 
   useEffect(() => {
