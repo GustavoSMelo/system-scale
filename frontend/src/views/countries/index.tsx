@@ -17,6 +17,7 @@ const Countries: React.FC = () => {
     getDataFromApi()
   }, [])
 
+
   return (
     <>
       <Navbar />
